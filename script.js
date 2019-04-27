@@ -79,11 +79,6 @@ class Timer {
 	        }
 	    }, this.delay); 
     }
-    btnResetPar () {
-        const Width = document.querySelector(`.timeline-${this.id}`);
-        Width.style.width = '100%';
-        this.setSeconds = this.setSeconds;
-    }
     stopTimer () {
         clearInterval(this.interval);
         clearInterval(this.timeInterval);
